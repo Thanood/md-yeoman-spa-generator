@@ -1,0 +1,17 @@
+<template>
+    <h1>Counter</h1>
+
+    <p>This is a simple example of an Aurelia component.</p>
+
+    <p>Current count: <strong>${currentCount}</strong></p>
+
+    <button md-button md-waves click.delegate="decrementCounter()">Decrement</button>
+    <button md-button md-waves click.delegate="incrementCounter()">Increment</button>
+
+    <select md-select value.two-way="selectedMeal">
+        <option>Select your meal</option>
+        <option repeat.for="meal of food" model.bind="meal">
+        ${meal.name}
+        </option>
+    </select>
+</template>
